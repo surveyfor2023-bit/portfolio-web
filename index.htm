@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/cd86d66ff7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tailwind CSS Practice</title>
+  </head>
+  <body class="px-10">
+    <main class="size-full">
+      <!-- Nav-bar HTML -->
+      <nav
+        class="h-[12%] text-black flex mb-8 justify-between items-center text-[1.2vw]"
+      >
+        <h1 class="text-[1.6rem] font-semibold">Portfolio</h1>
+        <div class="nav-bar flex gap-x-12 text-[1.2rem]">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+          <a href="">Together</a>
+        </div>
+      </nav>
+
+      <!-- Greetings HTML -->
+      <section class="m-0 p-0 flex justify-between items-end">
+        <div class="left-heading">
+          <div class="greeting text-[1.1rem]">Hello I am,</div>
+          <div
+            class="name text-[4.7rem] leading-none tracking-tighter font-semibold"
+          >
+            Vikash.
+          </div>
+        </div>
+        <div class="right-heading flex items-center">
+          <div class="time">[6:11 PM]</div>
+          <div class="horizontal w-15 h-[1px] bg-black"></div>
+          <div class="title">Creative Front-End Developer</div>
+        </div>
+      </section>
+
+      <!-- Center Image HTML -->
+      <section class="image w-full h-[65%] bg-red-500 mt-8">
+        <img
+          class="size-full object-cover object-[20%_20%]"
+          src="https://images.unsplash.com/photo-1755380549803-c6ab36193884?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="This is the image of a girl having coffee"
+        />
+      </section>
+
+      <!-- About me HTML -->
+      <section
+        class="sub-heading w-full h-[52%] mt-12 flex flex-col justify-center items-center relative"
+      >
+        <h2 class="text-[2.2rem] font-semibold mb-3">
+          [I Design & Build Experiences]
+        </h2>
+        <p class="text-[1rem] w-[55%] text-center leading-[1.1]">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum id
+          odio ipsum excepturi possimus explicabo nulla quo! Doloremque, harum
+          at.
+        </p>
+        <img
+          width="58"
+          height="58"
+          src="./visual-studio-code-icons/vscode.png"
+          class="absolute rounded-xl top-15 left-70 rotate-20"
+          alt="visual-studio-code-2019"
+        />
+        <img
+          width="72"
+          height="72"
+          src="https://img.icons8.com/color/96/html-5--v1.png"
+          class="absolute rounded-xl top-5 right-70 rotate-20"
+          alt="html-5--v1"
+        />
+        <img
+          width="70"
+          height="70"
+          src="https://img.icons8.com/color/96/css3.png"
+          class="absolute rounded-xl bottom-3 left-110 -rotate-20"
+          alt="css3"
+        />
+        <img
+          width="70"
+          height="70"
+          src="https://img.icons8.com/color/240/javascript.png"
+          class="absolute rounded-full bottom-2 right-120 rotate-30"
+          alt="javascript"
+        />
+      </section>
+
+      <!-- 2017_The Beginning (Photo Gallery) HTML -->
+      <section class="2017 w-full h-[200%] mt-18 pt-4 relative">
+        <!-- bg-yellow-400 -->
+        <div
+          class="content-2017 bg-white w-full h-[7%] mb-1 flex items-center gap-x-8 sticky top-0"
+        >
+          <h3 class="text-[3.8rem]">2017</h3>
+          <div class="w-32 h-[2px] bg-black"></div>
+          <h3 class="text-[3.8rem] opacity-30">The Beginning</h3>
+        </div>
+        <div class="2017-image-content w-full h-[92%] flex gap-x-12 mt-3">
+          <!-- bg-blue-300  -->
+          <div class="2017-chamber-1 w-1/3 flex flex-col gap-y-12">
+            <!--bg-pink-600-->
+            <div class="c_1_item bg-yellow-200 w-full h-1/5"></div>
+            <div class="c_1_item bg-yellow-200 w-full h-2/5"></div>
+            <div class="c_1_item bg-yellow-200 w-full h-1/5"></div>
+            <div class="c_1_item bg-yellow-200 w-full h-1/5"></div>
+          </div>
+          <div class="2017-chamber-2 w-1/3 flex flex-col gap-y-12 mt-20">
+            <!--bg-blue-600-->
+            <div class="c_2_item bg-yellow-200 w-full h-2/5"></div>
+            <div class="c_2_item bg-yellow-200 w-full h-1/5"></div>
+            <div class="c_2_item bg-yellow-200 w-full h-2/5"></div>
+          </div>
+          <div class="2017-chamber-3 w-1/3 flex flex-col gap-y-12 mt-8">
+            <!--bg-yellow-700-->
+            <div class="c_3_item bg-yellow-200 w-full h-1/5"></div>
+            <div class="c_3_item bg-yellow-200 w-full h-2/5"></div>
+            <div class="c_3_item bg-yellow-200 w-full h-2/5"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2018_The Escalation HTML -->
+      <section class="2018 w-full h-[200%] mt-10 pt-2 relative">
+        <!--bg-pink-400-->
+        <div
+          class="escalation-content w-full h-[7%] bg-white mb-1 flex gap-x-8 items-center sticky top-0"
+        >
+          <!--bg-purple-400-->
+          <h3 class="text-[3.8rem]">2018</h3>
+          <div class="w-32 h-[2px] bg-black"></div>
+          <h3 class="text-[3.8rem] opacity-30">The Escalation</h3>
+        </div>
+        <div class="2018-img-content w-full h-[92%] mt-3 flex gap-x-12">
+          <!--bg-violet-500-->
+          <div class="2018-chamber-1 w-1/3 flex flex-col gap-y-12">
+            <!--bg-black-->
+            <div class="c-1-item bg-green-300 w-full h-1/4"></div>
+            <div class="c-1-item bg-green-300 w-full h-2/4"></div>
+            <div class="c-1-item bg-green-300 w-full h-1/4"></div>
+          </div>
+          <div class="2018-chamber-2 w-1/3 mt-20 flex flex-col gap-y-12">
+            <!--bg-black-->
+            <div class="c-2-item bg-green-300 w-full h-2/4"></div>
+            <div class="c-2-item bg-green-300 w-full h-1/4"></div>
+            <div class="c-2-item bg-green-300 w-full h-1/4"></div>
+          </div>
+          <div class="2018-chamber-3 w-1/3 mt-8 flex flex-col gap-y-12">
+            <!--bg-black-->
+            <div class="c-3-item bg-green-300 w-full h-1/4"></div>
+            <div class="c-3-item bg-green-300 w-full h-1/4"></div>
+            <div class="c-3-item bg-green-300 w-full h-2/4"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dot backgrounds -->
+      <section
+        class="dot-image bg-[url(/Images/grey_dots.jpg)] mt-25 bg-center bg-crimson-400 h-[50%] w-full flex flex-col justify-center"
+      >
+        <h3 class="text-[1.8rem] font-semibold text-center">I am great at</h3>
+        <div class="logo flex justify-center items-center gap-x-4 mt-4">
+          <img
+            src="./Images/html_logo.png"
+            width="50"
+            height="50"
+            alt="HTML Logo"
+            srcset=""
+          />
+          <img
+            src="./Images/css_logo.png"
+            width="50"
+            height="50"
+            alt="CSS Logo"
+            srcset=""
+          />
+          <img
+            src="./Images/js_logo.png"
+            width="40"
+            height="40"
+            alt="JS Logo"
+            srcset=""
+          />
+          <img
+            src="./Images/github.png"
+            width="50"
+            height="50"
+            alt="Git Hub Logo"
+            srcset=""
+          />
+          <img src="./Images/letter-c.png" width="50" height="50" alt="C Logo" />
+          <img src="./Images/PostgresSQL.png" width="50" height="50" alt="PostgresSQL Logo" />
+          <img src="./Images/java.png" width="50" height="50" alt="Java Logo" />
+          <img width="55" height="60" src="https://img.icons8.com/fluency/100/bootstrap.png" alt="bootstrap logo"/>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="mt-20 leading-none">
+        <!--bg-green-600 -->
+        <div class="testimonials">
+          <h4 class="text-[2rem]">Client</h4>
+          <div class="test flex items-start justify-between">
+            <h5 class="text-[7rem]">Testimonials</h5>
+            <img
+              class="arrow-img"
+              src="./Images/right-arrow (1).png"
+              width="135"
+              height="10"
+            />
+            <h5 class="text-[7rem]">Works</h5>
+          </div>
+        </div>
+      </section>
+
+      <!-- Britania-section -->
+      <section class="britania-section h-[85%] w-full mt-12 p-0">
+        <!--bg-orange-400-->
+        <h4 class="text-[2.2rem] font-semibold">Britania</h4>
+        <div class="2017-mumbai flex items-center gap-x-2">
+          <p>2017</p>
+          <img src="./Images/arrow_lght_small.png" alt="" />
+          <p class="font-semibold">Mumbai</p>
+        </div>
+        <div class="rose-img mt-4 w-full h-[83%]">
+          <img
+            class="object-cover size-full"
+            src="./Images/rose_image.jpg"
+            alt="White Rose Image"
+          />
+        </div>
+        <!--bg-blue-300-->
+      </section>
+
+      <!--Orange-Splash Section -->
+      <section class="Orange-Splash h-[85%] w-full mt-20 p-0">
+        <!--bg-orange-400-->
+        <h4 class="text-[2.2rem] font-semibold">Orange-Splash</h4>
+        <div class="2017-mumbai flex items-center gap-x-2">
+          <p>2018</p>
+          <img src="./Images/arrow_lght_small.png" alt="" />
+          <p class="font-semibold">Bangalore</p>
+        </div>
+        <div class="rose-img mt-4 w-full h-[83%]">
+          <img
+            class="object-cover size-full"
+            src="./Images/orange_image.jpg"
+            alt="Orange_Image"
+          />
+        </div>
+        <!--bg-blue-300-->
+      </section>
+
+      <!-- Footer -->
+      <section class="footer h-[20%] w-full mt-12">
+        <!--bg-violet-400-->
+        <div
+          class="footer-txt h-full flex justify-between items-center font-semibold text-[1.1rem]"
+        >
+          <h5 class="text-[1.5rem] tracking-tighter">Vikash Tyagi</h5>
+          <p><Span class="aaj-ki-date">27 August 2025</Span> [<span class="footer-time">01:03PM</span>]</p>
+        </div>
+      </section>
+    </main>
+    <script>
+      function samay() {
+        var dt = new Date();
+        
+        var bakt = (dt.getHours() % 12) + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+        if (dt.getHours() > 1) {
+          bakt = bakt + " PM";
+        } else {
+          bakt = bakt + " AM";
+        }
+        document.querySelector(".time").textContent = bakt;
+        document.querySelector(".footer-time").textContent = bakt;
+        document.querySelector(".aaj-ki-date").textContent = dt.getDate() +" "+ dt.toLocaleString('default', { month: 'short' })+" "+ dt.getFullYear();
+      }
+
+      setInterval(() => {
+        samay();
+      }, 1000);
+    </script>
+  </body>
+</html>
